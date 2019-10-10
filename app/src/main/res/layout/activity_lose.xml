@@ -8,35 +8,22 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="178dp"
-        android:layout_marginBottom="84dp"
-        android:text="Attempts"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
-
-    <TextView
-        android:id="@+id/textView_attempts_lose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="57dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginTop="178dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginRight="184dp"
-        android:layout_marginBottom="84dp"
-        android:text="TextView"
+        android:layout_marginTop="532dp"
+        android:layout_marginBottom="150dp"
+        android:text="YOU LOSE!"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <pl.droidsonroids.gif.GifImageView
-
         android:layout_width="408dp"
         android:layout_height="338dp"
         android:background="#ffffff"

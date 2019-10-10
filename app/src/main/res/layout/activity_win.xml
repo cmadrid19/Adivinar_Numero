@@ -27,10 +27,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
         android:layout_marginLeft="41dp"
-        android:layout_marginTop="178dp"
-        android:layout_marginBottom="106dp"
-        android:text="Attempts"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginRight="311dp"
+        android:layout_marginBottom="172dp"
+        android:text="Remaining attempts:"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
 
@@ -40,15 +44,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
         android:layout_marginLeft="57dp"
-        android:layout_marginTop="178dp"
         android:layout_marginEnd="194dp"
         android:layout_marginRight="194dp"
-        android:layout_marginBottom="106dp"
-        android:text="TextView"
+        android:layout_marginBottom="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView_answare"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

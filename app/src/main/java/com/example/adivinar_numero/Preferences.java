@@ -8,7 +8,7 @@ public class Preferences {
     public static final String KEY_ATTEMPTS = "attempts";
 
     //guardar intentos
-    public static void saveAttempts (Context context, int attempts) {
+    public static void saveAttempts(Context context, int attempts) {
         SharedPreferences sp = context.getSharedPreferences(FILE_PREFERENCES, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putInt(KEY_ATTEMPTS, attempts);

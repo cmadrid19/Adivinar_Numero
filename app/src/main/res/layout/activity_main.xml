@@ -11,13 +11,45 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adivina el numero"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginRight="311dp"
+        android:text="Remaining attempts:"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tracks" />
+
+    <TextView
+        android:id="@+id/textView_attempts_win2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tracks" />
+
+    <TextView
+        android:id="@+id/textView_guess_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/caja_edit_text"
@@ -25,30 +57,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="102dp"
         android:layout_marginRight="102dp"
-        android:layout_marginBottom="491dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_guess_number" />
 
     <TextView
         android:id="@+id/textView_tracks"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="182dp"
-        android:layout_marginRight="182dp"
-        android:layout_marginBottom="166dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginRight="207dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,15 +87,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"
         android:layout_marginLeft="153dp"
+        android:layout_marginTop="540dp"
         android:layout_marginEnd="170dp"
         android:layout_marginRight="170dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="143dp"
         android:onClick="checkAnswer"
         android:text="Check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
