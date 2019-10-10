@@ -39,12 +39,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     *
+     * @return Devuelve un INT aleatorio
+     */
     public int generateRandom(){
         int random = 0;
         random = (int)(Math.random()*(MAXIMUM_RANGE - MINIMUM_RANGE +1)) + MINIMUM_RANGE;
         return random;
     }
 
+    /**
+     *
+     * @param view MainActivity.xml
+     */
     public void checkAnswer(View view) {
         //Comporbar que el numero de intentos sea mayor que 0
         if (attempts.getNumber_Attempts() > 0){
@@ -70,11 +78,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Starts next activityWin.class
+     */
     public void nextActivityWin(){
         Intent intent = new Intent(this, WinActivity.class);
         startActivity(intent);
     }
 
+    /**
+     * Starts next activityLose.class
+     */
     public void nextActivityLose(){
         Intent intent = new Intent(this, LoseActivity.class);
         startActivity(intent);
@@ -82,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
 //TODO
     /*
+    0. musica
     1. PreferenceShared.
     2. Menu partidas guardadas.
     3. Validar Preferences.
