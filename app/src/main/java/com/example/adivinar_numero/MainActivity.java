@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void nextActivityWin(){
         Intent intent = new Intent(this, WinActivity.class);
+        //Show rest attempts
+        intent.putExtra("attempts", attempts.getNumber_Attempts());
         startActivity(intent);
     }
 
@@ -85,5 +87,7 @@ public class MainActivity extends AppCompatActivity {
     1. PreferenceShared.
     2. Menu partidas guardadas.
     3. Validar Preferences.
+    4. intent putInt: intentos.
+
      */
 }
